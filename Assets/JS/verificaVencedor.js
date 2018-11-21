@@ -6,28 +6,41 @@ function verificaVitoria (tabela){
     for (let linha of linhas){
         let vencedor = verificaVencedor(linha);
         if (vencedor){
-            console.log(vencedor + " ganhou"); 
+            anunciaVencedor(vencedor); 
         }
     }
     for (let coluna of colunas){
         let vencedor = verificaVencedor(coluna);
         if (vencedor){
-            console.log(vencedor + " ganhou"); 
+            anunciaVencedor(vencedor); 
         }
     }
     for (let diagonal of diagonais){
         let vencedor = verificaVencedor(diagonal);
         if (vencedor){
-            console.log(vencedor + " ganhou"); 
+            anunciaVencedor(vencedor);  
         }
+    }
+    verificaVelha(celulas);
+}
+
+function verificaVelha (celulas){
+    let velha = true;
+    for (celula of celulas){
+        if (celula.textContent == ""){
+            velha = false
+        }
+    }
+    if (velha){
+        anunciaVencedor("Deu velha");
     }
 }
 
  function verificaVencedor (string){
     if (string == "XXX"){
-        return "X";
+        return "X ganhou";
     }else if(string == "OOO"){
-        return "O";
+        return "O ganhou";
     }
  }
 

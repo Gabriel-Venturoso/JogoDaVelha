@@ -1,11 +1,12 @@
 .jogo{
-    border: solid black 4px;
+    border: solid #3A5743 4px;
     height: 80vh;
     width: 50vw;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .celula{
-    border: solid black 2px;
+    border: solid #3A5743 2px;
     font-size: 50pt;
     height: 30%;
     padding: 10px;
@@ -13,3 +14,76 @@
     width: 30%;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+body{
+    margin: 0;
+    background-color: #CFFFB3;
+}
+
+header{
+    background-color: #ADE25D;
+    text-align: center;
+    padding: 0.5em;
+}
+
+h1{
+    font-size: 5em;
+    margin: 0;
+}
+
+.x{
+    color: #A81B0B;
+}
+
+.o{
+    color: #3B7080;
+}
+
+button{
+    border: solid 5px #3A5743;
+    border-radius: 10px;
+    background: none;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+.texto{
+    font-family: 'Righteous', cursive;
+    color: #3A5743;
+}
+
+.hide{
+    display: none;
+}
+
+.span{
+    padding: 1em;
+    background-color: #ADE25D;
+    border: solid 5px #3A5743;
+    border-radius: 10px;
+    color: #3A5743;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span{
+    font-size: 2em;
+}
+
+.shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

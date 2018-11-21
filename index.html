@@ -7,30 +7,38 @@
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <script src="assets/JS/marcaCampo.js" defer></script>
     <script src="assets/JS/verificaVencedor.js" defer></script>
+    <script src="assets/JS/popupVencedor.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h2 class="pontuação"></h2>
-        <h2 class="pontuação"></h2>
-        <h2 class="pontuação"></h2>
+        <h1 class="texto">Jogo da Velha</h1>
     </header>
-    <table class="jogo">
-        <tr class="linha" id="linha1">
-            <td class="celula"></td>
-            <td class="celula"></td>
-            <td class="celula"></td>
-        </tr>
-        <tr class="linha" id="linha2">
-            <td class="celula"></td>
-            <td class="celula"></td>
-            <td class="celula"></td>
-        </tr>
-        <tr class="linha" id="linha3">
-            <td class="celula"></td>
-            <td class="celula"></td>
-            <td class="celula"></td>
-        </tr>
-    </table>
+    <div class="container">
+        <table class="jogo">
+            <tr class="linha" id="linha1">
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+            </tr>
+            <tr class="linha" id="linha2">
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+            </tr>
+            <tr class="linha" id="linha3">
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="hide" id="popup">
+        <div class="span">
+            <span class="texto">oi</span>
+            <button class="texto">Reiniciar</button>
+        </div>
+    </div>
 </body>
 </html>
