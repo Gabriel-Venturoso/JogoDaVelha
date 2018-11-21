@@ -1,3 +1,5 @@
+
+
 function jogo (){
     let tabela = document.querySelector(".jogo");
     let vezX = true;
