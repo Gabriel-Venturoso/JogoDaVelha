@@ -6,22 +6,22 @@ function verificaVitoria (tabela){
     for (let linha of linhas){
         let vencedor = verificaVencedor(linha);
         if (vencedor){
-            anunciaVencedor(vencedor); 
+            return anunciaVencedor(vencedor);
         }
     }
     for (let coluna of colunas){
         let vencedor = verificaVencedor(coluna);
         if (vencedor){
-            anunciaVencedor(vencedor); 
+            return anunciaVencedor(vencedor); 
         }
     }
     for (let diagonal of diagonais){
         let vencedor = verificaVencedor(diagonal);
         if (vencedor){
-            anunciaVencedor(vencedor);  
+            return anunciaVencedor(vencedor);  
         }
     }
-    verificaVelha(celulas);
+    return verificaVelha(celulas);
 }
 
 function verificaVelha (celulas){
